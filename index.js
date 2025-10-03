@@ -119,7 +119,7 @@ async function sendTelegramPhotoWithKeyboard(chatId, photoUrl, caption, keyboard
 }
 
 
-    } else if (text === '/stars') {
+      else if (text === '/stars') {
       const starsMessage = `⭐ <b>Telegram Stars</b>
 
 Используйте Telegram Stars для покупки подарков!
