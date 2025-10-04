@@ -29,7 +29,7 @@ app.post('/webhook', async (req, res) => {
 
     // --- /start ---
     if (text === '/start') {
-      const welcomeMessage = `🎁 <b>Добро пожаловать в MetaGift!</b>
+      const welcomeMessage = `🎁 <b>Добро пожаловать в Wave Gift!</b>
 
 Покупайте и дарите уникальные подарки в Telegram!
 
@@ -50,7 +50,7 @@ app.post('/webhook', async (req, res) => {
         ]]
       };
 
-      const photoUrl = "https://wave-giftitogo-12.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-13.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, welcomeMessage, keyboard);
     }
 
@@ -76,7 +76,7 @@ app.post('/webhook', async (req, res) => {
         ]]
       };
 
-      const photoUrl = "https://wave-giftitogo-12.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-13.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, starsMessage, keyboard);
     }
   }
@@ -1779,7 +1779,7 @@ app.get('/set-webhook', async (req, res) => {
   }
 
   try {
-    const webhookUrl = `https://wave-giftitogo-12.onrender.com/webhook`;
+    const webhookUrl = `https://wave-giftitogo-13.onrender.com/webhook`;
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/setWebhook`;
     
     console.log('Setting webhook to:', webhookUrl);
