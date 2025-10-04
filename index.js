@@ -88,7 +88,7 @@ app.post('/webhook', async (req, res) => {
 
 // === Вынеси функцию отдельно (рядом с sendTelegramMessageWithKeyboard) ===
 async function sendTelegramPhotoWithKeyboard(chatId, photoUrl, caption, keyboard, parse_mode = 'HTML') {
-  if (!BOT_TOKEN || BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
+  if (!BOT_TOKEN || BOT_TOKEN === '8417659328:AAFNp89cN4LJWTQ121wtoaR-P0vSh43DYYA') {
     console.log('Bot token not configured, skipping photo send');
     return false;
   }
@@ -163,7 +163,7 @@ function convertPrice(tonPrice, targetCurrency) {
 
 // Function to send message via Telegram Bot API
 async function sendTelegramMessage(userId, message, parse_mode = 'HTML') {
-  if (!BOT_TOKEN || BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
+  if (!BOT_TOKEN || BOT_TOKEN === '8417659328:AAFNp89cN4LJWTQ121wtoaR-P0vSh43DYYA') {
     console.log('Bot token not configured, skipping message send');
     return false;
   }
