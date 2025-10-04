@@ -1779,7 +1779,7 @@ app.get('/set-webhook', async (req, res) => {
   }
 
   try {
-    const webhookUrl = `https://wave-gift-itog.onrender.com/webhook`;
+    const webhookUrl = `https://wave-giftitogo-11.onrender.com/webhook`;
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/setWebhook`;
     
     console.log('Setting webhook to:', webhookUrl);
