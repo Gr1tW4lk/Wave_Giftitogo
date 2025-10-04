@@ -50,7 +50,7 @@ app.post('/webhook', async (req, res) => {
         ]]
       };
 
-      const photoUrl = "https://wave-gift-itog.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-12.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, welcomeMessage, keyboard);
     }
 
@@ -76,7 +76,7 @@ app.post('/webhook', async (req, res) => {
         ]]
       };
 
-      const photoUrl = "https://wave-gift-itog.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-12.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, starsMessage, keyboard);
     }
   }
