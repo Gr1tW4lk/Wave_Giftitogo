@@ -45,12 +45,12 @@ app.post('/webhook', async (req, res) => {
         inline_keyboard: [[
           {
             text: "🛍️ Открыть магазин",
-            web_app: { url: "https://wave-giftitogo-15.com" }
+            web_app: { url: "https://t.me/Wave_Gift_bot/Wave_Gift" }
           }
         ]]
       };
 
-      const photoUrl = "https://wave-giftitogo-15.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-16.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, welcomeMessage, keyboard);
     }
 
@@ -71,12 +71,12 @@ app.post('/webhook', async (req, res) => {
         inline_keyboard: [[
           {
             text: "⭐ Открыть магазин Stars",
-            web_app: { url: "https://wave-giftitogo-15.onrender.com" }
+            web_app: { url: "https://t.me/Wave_Gift_bot/Wave_Gift" }
           }
         ]]
       };
 
-      const photoUrl = "https://wave-giftitogo-15.onrender.com/assets/welcom.png";
+      const photoUrl = "https://wave-giftitogo-16.onrender.com/assets/welcom.png";
       await sendTelegramPhotoWithKeyboard(chatId, photoUrl, starsMessage, keyboard);
     }
   }
@@ -1779,7 +1779,7 @@ app.get('/set-webhook', async (req, res) => {
   }
 
   try {
-    const webhookUrl = `https://wave-giftitogo-15.onrender.com/webhook`;
+    const webhookUrl = `https://wave-giftitogo-16.onrender.com/webhook`;
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/setWebhook`;
     
     console.log('Setting webhook to:', webhookUrl);
